@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia: #22d4fd;
+    --cor-houve: #272727;
+
+    --fonte-primaria: "Krona one", sans-serif;
+    --fonte-secundaria: "Monteserrat", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+   
+} 
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.titulo-destaque{
+    color : var(--cor-tercearia);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+.apresentacao_subtitulo{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+.apresentacao_titulo__about{
+    font-family: var(--fonte-primaria);
+    font-size: 2rem;
+}
+.apresentacao__links__navegacao{
+    border: 2px solid var(--cor-tercearia);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 60%;
+    border-radius: 08px;
+    text-align: center;
+    padding: 21.5px 0;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-weight: 600;
+}
+.apresentacao__links__navegacao:hover{
+    background-color: var(--cor-houve);
+}
+.apresentacao__imagem{
+    width: 50%;
+    border-radius: 1rem;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-tercearia);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria) ;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.apresentacao__link__boticario{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+
+}
+.apresentacao__link__boticario:hover{
+    color: var(--cor-tercearia);
+}
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+    .apresentacao__conteudo__texto{
+        width: auto;
+    }
+    
+}
